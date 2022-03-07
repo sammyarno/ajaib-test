@@ -53,6 +53,7 @@ const Filter = props => {
           <Form.Group as={Col} lg={3} className="filter-wrapper">
             <Form.Label>Search by name</Form.Label>
             <Form.Control type="text" placeholder="Enter name" value={form.name || ''} size="sm" onChange={handleKeywordChange} />
+            <Form.Text muted>will refetch every 3 seconds</Form.Text>
           </Form.Group>
           <Form.Group as={Col} lg={2} className="filter-wrapper">
             <Form.Label>Filter by gender</Form.Label>
