@@ -2,7 +2,7 @@
   "name": "ajaib-test",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://sammyarno.github.io/ajaib-test",
+  "homepage": "https://sammyarno.github.io/ajaib-test",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
