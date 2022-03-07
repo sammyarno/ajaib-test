@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ajaib-test/static/css/main.4be16273.css",
+    "main.js": "/ajaib-test/static/js/main.f82775f8.js",
+    "index.html": "/ajaib-test/index.html",
+    "main.4be16273.css.map": "/ajaib-test/static/css/main.4be16273.css.map",
+    "main.f82775f8.js.map": "/ajaib-test/static/js/main.f82775f8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4be16273.css",
+    "static/js/main.f82775f8.js"
+  ]
+}
