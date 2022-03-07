@@ -1,0 +1,8 @@
+.filter {
+  &-wrapper {
+    &:last-child {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+}

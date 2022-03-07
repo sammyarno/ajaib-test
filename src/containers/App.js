@@ -1,19 +1,15 @@
+import Breadcrumb from "react-bootstrap/Breadcrumb";
+import Filter from '../components/Filter';
+
 const App = () => {
   return (
     <div className="app">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Breadcrumb>
+        <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
+        <Breadcrumb.Item active>Example Page</Breadcrumb.Item>
+      </Breadcrumb>
+      <h2 className="mb-5">Example With Search and Filter</h2>
+      <Filter />
     </div>
   );
 }
