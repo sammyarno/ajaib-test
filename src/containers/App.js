@@ -1,7 +1,11 @@
-import Breadcrumb from "react-bootstrap/Breadcrumb";
+import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import Filter from '../components/Filter';
+import Table from '../components/Table';
+import useGetUsers from "../hooks/useGetUsers";
 
 const App = () => {
+  const { response, loading } = useGetUsers();
+
   return (
     <div className="app">
       <Breadcrumb>
@@ -10,6 +14,7 @@ const App = () => {
       </Breadcrumb>
       <h2 className="mb-5">Example With Search and Filter</h2>
       <Filter />
+      <Table data={response.data} loading={loading} />
     </div>
   );
 }

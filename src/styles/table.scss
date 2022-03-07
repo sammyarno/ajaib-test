@@ -1,0 +1,29 @@
+.table {
+  &-header {
+    p {
+      margin: 0;
+      font-weight: bold;
+    }
+
+    &_wrapper {
+      padding-top: .75rem;
+      padding-bottom: .75rem;
+      background: rgba(41,111,228, .4);
+    }
+  }
+
+  &-data {
+    &:nth-child(odd) {
+      background-color: rgba(41,111,228, .15);
+    }
+
+    p {
+      margin: 0;
+    }
+
+    &_wrapper {
+      padding-top: .75rem;
+      padding-bottom: .75rem;
+    }
+  }
+}

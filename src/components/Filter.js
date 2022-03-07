@@ -3,7 +3,7 @@ import { Form, Row, Col, Button } from "react-bootstrap";
 import "../styles/filter.scss";
 
 const Filter = () => (
-  <div className="filter-container mb-5">
+  <div className="filter-container mb-8">
     <Form>
       <Row>
         <Form.Group as={Col} lg={3} className="filter-wrapper">
