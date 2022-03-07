@@ -14,6 +14,8 @@ after cloning the repository, please run `yarn install` and then `yarn start` to
 
 ## Preview
 
+[Check the preview in GH Pages here](https://sammyarno.github.io/ajaib-test/)
+
 ![FireShot Capture 118 - React App - localhost](https://user-images.githubusercontent.com/28641692/157108545-46edc5ca-6379-4138-8990-cbd791e0fbfe.png)
 
 
