@@ -5,14 +5,6 @@ import '../styles/table.scss';
 const Table = props => {
   const { data = [], loading } = props;
 
-  if (loading) {
-    return (
-      <div className="text-center">
-        <Spinner animation="border" />
-      </div>
-    );
-  }
-
   return (
     <Container fluid className="table-container">
       <Row className="table-header">
@@ -33,8 +25,15 @@ const Table = props => {
         </Col>
       </Row>
       {
-        data.map(item => (
-          <Row className="table-data">
+        loading && (
+          <div className="text-center mt-4">
+            <Spinner animation="border" />
+          </div>
+        )
+      }
+      {
+        !loading && data.map(item => (
+          <Row key={item.id} className="table-data">
             <Col lg={2} className="table-data_wrapper">
               <p>{item.username}</p>
             </Col>
@@ -45,7 +44,7 @@ const Table = props => {
               <p>{item.email}</p>
             </Col>
             <Col lg={1} className="table-data_wrapper">
-              <p>{item.gender}</p>
+              <p className="text-capitalize">{item.gender}</p>
             </Col>
             <Col className="table-data_wrapper">
               <p>{moment(item.registeredData).format('DD-MM-YYYY hh:mm')}</p>

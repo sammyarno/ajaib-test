@@ -4,7 +4,7 @@ import Table from '../components/Table';
 import useGetUsers from "../hooks/useGetUsers";
 
 const App = () => {
-  const { response, loading } = useGetUsers();
+  const { response, loading, refetch } = useGetUsers();
 
   return (
     <div className="app">
@@ -13,7 +13,7 @@ const App = () => {
         <Breadcrumb.Item active>Example Page</Breadcrumb.Item>
       </Breadcrumb>
       <h2 className="mb-5">Example With Search and Filter</h2>
-      <Filter />
+      <Filter onRefetch={refetch} />
       <Table data={response.data} loading={loading} />
     </div>
   );

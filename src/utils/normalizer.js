@@ -1,4 +1,4 @@
-export const normalizeResponse = rawData => {
+const normalizer = rawData => {
   const result = {
     data: [],
     meta: {},
@@ -24,3 +24,5 @@ export const normalizeResponse = rawData => {
 
   return result;
 };
+
+export default normalizer;
