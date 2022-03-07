@@ -1,13 +1,25 @@
 {
   "files": {
-    "main.css": "/ajaib-test/static/css/main.4be16273.css",
-    "main.js": "/ajaib-test/static/js/main.f82775f8.js",
+    "main.css": "/ajaib-test/static/css/main.b6016981.css",
+    "main.js": "/ajaib-test/static/js/main.df1fc2fa.js",
+    "static/css/173.9216bfbe.chunk.css": "/ajaib-test/static/css/173.9216bfbe.chunk.css",
+    "static/js/173.4a5cfab7.chunk.js": "/ajaib-test/static/js/173.4a5cfab7.chunk.js",
+    "static/css/856.e070eedb.chunk.css": "/ajaib-test/static/css/856.e070eedb.chunk.css",
+    "static/js/856.b8d014ff.chunk.js": "/ajaib-test/static/js/856.b8d014ff.chunk.js",
+    "static/js/450.4095d688.chunk.js": "/ajaib-test/static/js/450.4095d688.chunk.js",
+    "static/js/768.06a747de.chunk.js": "/ajaib-test/static/js/768.06a747de.chunk.js",
     "index.html": "/ajaib-test/index.html",
-    "main.4be16273.css.map": "/ajaib-test/static/css/main.4be16273.css.map",
-    "main.f82775f8.js.map": "/ajaib-test/static/js/main.f82775f8.js.map"
+    "main.b6016981.css.map": "/ajaib-test/static/css/main.b6016981.css.map",
+    "main.df1fc2fa.js.map": "/ajaib-test/static/js/main.df1fc2fa.js.map",
+    "173.9216bfbe.chunk.css.map": "/ajaib-test/static/css/173.9216bfbe.chunk.css.map",
+    "173.4a5cfab7.chunk.js.map": "/ajaib-test/static/js/173.4a5cfab7.chunk.js.map",
+    "856.e070eedb.chunk.css.map": "/ajaib-test/static/css/856.e070eedb.chunk.css.map",
+    "856.b8d014ff.chunk.js.map": "/ajaib-test/static/js/856.b8d014ff.chunk.js.map",
+    "450.4095d688.chunk.js.map": "/ajaib-test/static/js/450.4095d688.chunk.js.map",
+    "768.06a747de.chunk.js.map": "/ajaib-test/static/js/768.06a747de.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4be16273.css",
-    "static/js/main.f82775f8.js"
+    "static/css/main.b6016981.css",
+    "static/js/main.df1fc2fa.js"
   ]
 }
