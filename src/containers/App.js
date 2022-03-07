@@ -1,16 +1,18 @@
+import { Suspense, lazy } from 'react';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import useGetUsers from '../hooks/useGetUsers';
 
 import Provider from '../context';
 
-import Filter from '../components/Filter';
-import Table from '../components/Table';
-import Pagination from '../components/Pagination';
+const Filter = lazy(() => import('../components/Filter'));
+const Table = lazy(() => import('../components/Table'));
+const Pagination = lazy(() => import('../components/Pagination'));
 
 const App = () => {
   const { response, loading, refetch } = useGetUsers();
 
   return (
+    <Suspense fallback={null}>
     <Provider 
       data={response.data || []} 
       loading={loading} 
@@ -29,6 +31,7 @@ const App = () => {
         <Pagination />
       </div>
     </Provider>
+    </Suspense>
   );
 }
 

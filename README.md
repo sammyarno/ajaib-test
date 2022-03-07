@@ -3,10 +3,11 @@
 This project is a personal project for `Senior Web Engineer` in Ajaib. This project features are:
 
 - [x] Get data from API and porting to usable table data
-- [x] Filtering data from username and gender
+- [x] Filtering data from username (using debounce) and gender
 - [x] Reset filter
 - [x] Sort data by clicking the header table
 - [x] Pagination
+- [x] Reduce bundle time from 24xms to +- 140ms with React.Lazy and React.Suspense
 
 ## How to run
 
