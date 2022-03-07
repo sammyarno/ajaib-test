@@ -48,7 +48,7 @@ const Filter = () => {
   };
 
   return (
-    <div className="filter-container mb-8">
+    <div className="filter-container mb-6">
       <Form>
         <Row>
           <Form.Group as={Col} lg={3} className="filter-wrapper">

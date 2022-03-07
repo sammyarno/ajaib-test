@@ -11,7 +11,7 @@ const useGetUsers = () => {
 
   const defaultParams = useMemo(() => ({
     page: 1,
-    results: 5,
+    results: 10,
     inc: 'gender,name,login,registered,email'
   }), []);
 

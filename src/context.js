@@ -5,7 +5,7 @@ const Context = createContext({
   loading: false,
   refetch: () => {},
   page: 1,
-  limit: 5,
+  limit: 10,
 });
 
 const Provider = props => {
