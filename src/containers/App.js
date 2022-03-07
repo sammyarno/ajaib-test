@@ -1,7 +1,8 @@
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import Filter from '../components/Filter';
 import Table from '../components/Table';
-import useGetUsers from "../hooks/useGetUsers";
+import Pagination from '../components/Pagination';
+import useGetUsers from '../hooks/useGetUsers';
 
 const App = () => {
   const { response, loading, refetch } = useGetUsers();
@@ -15,6 +16,7 @@ const App = () => {
       <h2 className="mb-5">Example With Search and Filter</h2>
       <Filter onRefetch={refetch} />
       <Table data={response.data} loading={loading} />
+      <Pagination onRefetch={refetch} loading={loading} page={1} />
     </div>
   );
 }
