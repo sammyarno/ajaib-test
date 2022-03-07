@@ -1,9 +1,10 @@
 import { Col, Row, Spinner, Container } from 'react-bootstrap';
 import moment from 'moment';
+import { useMyContext } from '../context';
 import '../styles/table.scss';
 
-const Table = props => {
-  const { data = [], loading } = props;
+const Table = () => {
+  const { data, loading } = useMyContext();
 
   return (
     <Container fluid className="table-container">

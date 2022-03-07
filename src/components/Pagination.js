@@ -1,8 +1,10 @@
 import { Pagination } from 'react-bootstrap';
+import { useMyContext } from '../context';
 
-const PaginationTable = ({ onRefetch, loading, page }) => {
+const PaginationTable = () => {
+  const { page, loading, refetch } = useMyContext();
 
-  const handlePaginationChange = page => onRefetch({ page });
+  const handlePaginationChange = page => refetch({ page });
 
   return (
     <Pagination disabled={!loading} size="sm">

@@ -2,11 +2,12 @@
 import { useCallback, useState } from 'react';
 import { Form, Button, Row, Col } from 'react-bootstrap';
 import debounce from 'lodash.debounce';
+import { useMyContext } from '../context';
 import '../styles/filter.scss';
 
-const Filter = props => {
+const Filter = () => {
   const [form, setForm] = useState({});
-  const { onRefetch } = props;
+  const { refetch } = useMyContext();
 
   const handleGenderChange = (e) => {
     const selectedGender = e.target.value ?? '';
@@ -16,7 +17,7 @@ const Filter = props => {
       gender: selectedGender
     }));
 
-    onRefetch({
+    refetch({
       ...form,
       gender: selectedGender
     });
@@ -24,7 +25,7 @@ const Filter = props => {
 
   const debounceChange = useCallback(
     debounce((value) => {
-      onRefetch({
+      refetch({
         ...form,
         name: value,
       });
@@ -43,7 +44,7 @@ const Filter = props => {
 
   const handleResetFilter = () => {
     setForm({});
-    onRefetch();
+    refetch();
   };
 
   return (
