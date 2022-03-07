@@ -13,6 +13,7 @@ This project is a personal project for `Senior Web Engineer` in Ajaib. This proj
 after cloning the repository, please run `yarn install` and then `yarn start` to start the project.
 
 ## Preview
+
 ![FireShot Capture 118 - React App - localhost](https://user-images.githubusercontent.com/28641692/157108545-46edc5ca-6379-4138-8990-cbd791e0fbfe.png)
 
 
